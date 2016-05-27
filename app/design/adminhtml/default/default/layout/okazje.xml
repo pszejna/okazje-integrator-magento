@@ -1,0 +1,16 @@
+
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_okazje_offer_index>
+        <reference name="menu">
+            <action method="setActive"><menupath>catalog/okazje</menupath></action>
+        </reference>
+        <reference name="content">
+            <block type="okazje/admin_offer" name="okazje_offer">
+                <block type="adminhtml/store_switcher" name="store_switcher" as="store_switcher">
+                    <action method="setUseConfirm"><params>0</params></action>
+                </block>
+            </block>
+        </reference>
+    </adminhtml_okazje_offer_index>
+</layout>

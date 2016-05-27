@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <okazje translate="title" module="okazje">
+                    <title>Okazje Integrator for Magento</title>
+                    <children>
+                        <offer_index translate="title" module="okazje">
+                            <title>Offer</title>
+                            <action>adminhtml/okazje_offer/index</action>
+                        </offer_index>
+                        <config translate="title" module="okazje">
+                            <title>Configuration</title>
+                            <action>adminhtml/system_config/edit/section/okazje</action>
+                        </config>
+                    </children>
+                    <sort_order>280</sort_order>
+                </okazje>
+            </children>
+        </catalog>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <okazje translate="title" module="okazje">
+                                <title>Okazje Integrator for Magento</title>
+                                <sort_order>280</sort_order>
+                                <children>
+                                    <offer_index translate="title" module="okazje">
+                                        <title>Offer</title>
+                                        <sort_order>10</sort_order>
+                                    </offer_index>
+                                </children>
+                            </okazje>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
